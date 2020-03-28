@@ -16,6 +16,26 @@
   </button>
 
 </div>
+
+<form [formGroup]="billForm">
+  <div class="row new-form">
+    <div class="col-md-3">
+      <input type="text" [formControlName]="date">
+    </div>
+    <div class="col-md-1">
+      <input type="text" [formControlName]="amount">
+    </div>
+    <div class="col-md-3">
+      <input type="text" [formControlName]="title">
+    </div>
+    <div class="col-md-3">
+      <input type="text" [formControlName]="description">
+    </div>
+    <div class="col-md-2">
+      <input type="text" [formControlName]="category">
+    </div>
+  </div>
+</form>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
